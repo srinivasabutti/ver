@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ffff00;
+  	color:#ff0000
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      color: #ff00ff;
+  	font-size:20px;
+      text-align: center;
+      padding: 14px 30px;
+      text-decoration: none;
+  }
+
+  li a:hover {
+      background-color: #000000;
+  }
+  </style>
+
+  </head>
+  <body bgcolor='silver'>
+      {% block content %}
+    <header>
+      <h1>Home page</h1>
+      <ul>
+    <li>   <a href="{% url 'about' %}">About</a></li>
+       <li> <a href="{% url 'courses' %}">Courses</a> </li>
+       <li> <a href="{% url 'students' %}">Students</a> </li>
+       <ul>
+    </header>
+      {% endblock %}
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h3>By Sreenivas @ TallGrass Trainings</h3>
+<h2> for more details contact srinivas 8143265181</h2>
+</body>
+</html>
